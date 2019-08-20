@@ -1,0 +1,84 @@
+﻿@{
+    ViewData["Title"] = "Register";
+}
+<h1>Register</h1>
+
+@model CoffeeShop.Models.PersonModel
+
+<form asp-action="EnrollUser" asp-controller="Registration" method="post" class="control-label col-md-2">
+
+
+    <div class="col-12">
+        First Name:
+        <input type="text" name="FirstName" value="@Model.FirstName" placeholder="@Model.FirstName" class="col-12" />
+        @Html.ValidationMessageFor(m => m.FirstName)
+    </div>
+
+    <div class="col-12">
+        Last Name:
+        <input type="text" name="LastName" value="@Model.LastName" placeholder="@Model.LastName" class="col-12" />
+        @Html.ValidationMessageFor(m => m.LastName)
+    </div>
+
+    <div class="col-12">
+        Username:
+        <input type="text" name="Username" value="@Model.Username" placeholder="@Model.Username" class="col-12" />
+        @Html.ValidationMessageFor(m => m.Username)
+    </div>
+
+    <div class="col-12">
+        Email:
+        <input type="text" name="Email" value="@Model.Email" placeholder="@Model.Email" class="col-12" />
+        @Html.ValidationMessageFor(m => m.Email)
+    </div>
+
+    <div class="col-12">
+        Confirm Email:
+        <input type="text" name="ConfirmEmail" value="@Model.ConfirmEmail" placeholder="@Model.ConfirmEmail" class="col-12" />
+        @Html.ValidationMessageFor(m => m.ConfirmEmail)
+    </div>
+
+    <div class="col-12">
+        Password:
+        <input type="text" name="Password" value="@Model.Password" placeholder="@Model.Password" class="col-12" />
+        @Html.ValidationMessageFor(m => m.Password)
+    </div>
+
+    <div class="col-12">
+        Confirm Password:
+        <input type="text" name="ConfirmPassword" value="@Model.ConfirmPassword" placeholder="@Model.ConfirmPassword" class="col-12" />
+        @Html.ValidationMessageFor(m => m.ConfirmPassword)
+
+    </div>
+
+    <div class="col-12">
+        Age:
+        <input type="number" name="Age" value="@Model.Age" placeholder="@Model.Age" class="col-12" />
+    </div>
+
+    @*<div class="form-group">
+        @Html.LabelFor(m => m.Gender, "Gender", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            <label class="container">
+                <select name="Gender">
+                    <option type="radio" value="Female">Female</option>
+                    <option type="radio" value="Male">Male</option>
+                    <option type="radio" value="Other">Other</option>
+                </select>
+            </label>
+            @Html.ValidationMessageFor(m => m.Gender, "", new { @class = "text-danger" })
+        </div>*@
+
+
+
+
+        <input type="submit" value="submit" />
+        <style>
+            body {
+                background-image: url('../../CoffeeBackground.jpg');
+                background-size: cover;
+                color: white;
+            }
+        </style>
+
+</form>
