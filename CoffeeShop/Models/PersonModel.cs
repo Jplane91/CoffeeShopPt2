@@ -7,6 +7,9 @@ namespace CoffeeShop.Models
     public class PersonModel
     {
 
+      
+        public string Prefix { get; set; }
+
         [Required(ErrorMessage = "Must enter in a name")]
         public string FirstName { get; set; }
 

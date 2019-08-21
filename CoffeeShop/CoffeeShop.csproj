@@ -16,5 +16,15 @@
 
   <ItemGroup>
     <Folder Include="Views\Registration\" />
+    <Folder Include="Views\Login\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="Views\Home\ViewUserData.cs" />
+    <Compile Remove="Controllers\Login.cs" />
+    <Compile Remove="Models\EmptyClass.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="Views\Login.cshtml" />
+    <Content Remove="Views\Home\UserInfo.cshtml" />
   </ItemGroup>
 </Project>

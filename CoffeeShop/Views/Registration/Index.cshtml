@@ -5,9 +5,23 @@
 
 @model CoffeeShop.Models.PersonModel
 
-<form asp-action="EnrollUser" asp-controller="Registration" method="post" class="control-label col-md-2">
+<div class="background-image"></div>
 
+<form asp-action="EnrollUser" asp-controller="Registration" method="post" class="control-label col-md-3">
 
+    <div class="form-group"></div>
+    @Html.LabelFor(m => m.Prefix, "Prefix", htmlAttributes: new { @class = "control-label col-md-2" })
+    <div class="col-12">
+        <label class="container">
+            <select name="Gender">
+                <option type="radio" value="Mr.">Mr.</option>
+                <option type="radio" value="Mrs.">Mrs.</option>
+                <option type="radio" value="Ms.">Ms.</option>
+            </select>
+        </label>
+        @Html.ValidationMessageFor(m => m.Prefix, "", new { @class = "text-danger" })
+    </div>
+    
     <div class="col-12">
         First Name:
         <input type="text" name="FirstName" value="@Model.FirstName" placeholder="@Model.FirstName" class="col-12" />
@@ -56,29 +70,16 @@
         <input type="number" name="Age" value="@Model.Age" placeholder="@Model.Age" class="col-12" />
     </div>
 
-    @*<div class="form-group">
-        @Html.LabelFor(m => m.Gender, "Gender", htmlAttributes: new { @class = "control-label col-md-2" })
-        <div class="col-md-10">
-            <label class="container">
-                <select name="Gender">
-                    <option type="radio" value="Female">Female</option>
-                    <option type="radio" value="Male">Male</option>
-                    <option type="radio" value="Other">Other</option>
-                </select>
-            </label>
-            @Html.ValidationMessageFor(m => m.Gender, "", new { @class = "text-danger" })
-        </div>*@
 
+    <input type="submit" value="submit" />
+    <style>
+        body {
+            color: white;
+            text-align: center;
+            background-image: url('../../CoffeeBackground.jpg');
+            background-size: cover;
 
-
-
-        <input type="submit" value="submit" />
-        <style>
-            body {
-                background-image: url('../../CoffeeBackground.jpg');
-                background-size: cover;
-                color: white;
-            }
-        </style>
+        }
+    </style>
 
 </form>

@@ -1,7 +1,5 @@
-﻿@{
-    ViewData["Title"] = "Privacy";
-}
-
+﻿
+@{
     ViewData["Title"] = "UserData";
 }
 
@@ -21,6 +19,7 @@
             <td>@user.UserName</td>
             <td>@user.Email</td>
             <td>@user.Password</td>
+            <td>@Html.ActionLink("Add to Cart", "AddItemToCart", "Payment", user)</td>
         </tr>
     }
 

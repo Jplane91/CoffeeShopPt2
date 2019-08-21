@@ -29,3 +29,7 @@
 /Users/mac/Projects/CoffeeShop/CoffeeShop/obj/Debug/netcoreapp2.2/CoffeeShop.pdb
 /Users/mac/Projects/CoffeeShop/CoffeeShop/obj/Debug/netcoreapp2.2/CoffeeShop.csproj.CopyComplete
 /Users/mac/Projects/CoffeeShop/CoffeeShop/obj/Debug/netcoreapp2.2/CoffeeShop.csprojAssemblyReference.cache
+/Users/mac/Projects/CoffeeShop/CoffeeShop/obj/Debug/netcoreapp2.2/Razor/Views/Home/Login.g.cshtml.cs
+/Users/mac/Projects/CoffeeShop/CoffeeShop/obj/Debug/netcoreapp2.2/Razor/Views/Home/ViewUserData.g.cshtml.cs
+/Users/mac/Projects/CoffeeShop/CoffeeShop/obj/Debug/netcoreapp2.2/Razor/Views/Login/Login.g.cshtml.cs
+/Users/mac/Projects/CoffeeShop/CoffeeShop/obj/Debug/netcoreapp2.2/Razor/Views/Login/UserList.g.cshtml.cs
